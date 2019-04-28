@@ -1,0 +1,7 @@
+export const ADD_TEXT = 'ADD_TEXT'
+export const FETCH_TEXT = 'FETCH_TEXT'
+
+export const FETCH_TEXT_SUCCESS = 'FETCH_TEXT_SUCCESS'
+export const FETCH_TEXT_FAIL = 'FETCH_TEXT_FAIL'
+export const ADD_TEXT_SUCCESS = 'ADD_TEXT_SUCCESS'
+export const ADD_TEXT_FAIL = 'ADD_TEXT_FAIL'
