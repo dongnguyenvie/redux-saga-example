@@ -19,12 +19,15 @@ class ShowTextComponent extends Component {
     const quantityFirtFetch = 1;
     return (
       <div style={{ width: "50%" }}>
-        <input
-          className="input"
-          text="text"
-          onChange={e => this.hanldeChangeQuantity(e.target.value)}
-          value={this.state.quantity}
-        />
+        <div style={{ display: "flex" }}>
+          <label>More quantity</label>
+          <input
+            className="input"
+            text="text"
+            onChange={e => this.hanldeChangeQuantity(e.target.value)}
+            value={this.state.quantity}
+          />
+        </div>
         <button
           className="btn btn-primary"
           onClick={() => this.props.onFetchText(quantityFirtFetch)}
@@ -33,7 +36,7 @@ class ShowTextComponent extends Component {
         </button>{" "}
         <button
           className="btn btn-primary"
-          onClick={() => this.props.onAddText(quantityFirtFetch)}
+          onClick={() => this.props.onAddText(this.state.quantity)}
         >
           add Text
         </button>

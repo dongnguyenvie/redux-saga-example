@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { call, all, fork } from "redux-saga/effects";
 import { watchFetchTexts, watchAddTexts } from "./textSaga";
 
